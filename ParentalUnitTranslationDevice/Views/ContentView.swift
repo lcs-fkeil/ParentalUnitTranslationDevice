@@ -8,11 +8,45 @@
 import SwiftUI
 
 // MARK: Stored properties
-var shortForm: String = ""
+var providedShortForm: String = ""
 
 
 // MARK: Computed properties
+
 struct ContentView: View {
+    
+    var feedback: String {
+        switch providedShortForm {
+            
+        case "CU":
+            return "see you"
+        case ":-)":
+            return "I'm happy"
+        case ":-(":
+            return "I'm unhappy"
+        case ";-)":
+            return "wink"
+        case ":-P":
+            return "stick out my tongue"
+        case "(~.~)":
+            return "sleepy"
+        case "TA":
+            return "totally awesome"
+        case "CCC":
+            return "Canadian Cheese Champion"
+        case "CUZ":
+            return "because"
+        case "TY":
+            return "thank you"
+        case "TW":
+            return "you're welcome"
+        case "TTYL":
+            return "talk to you later"
+        default:
+            return "Cannot be translated."
+            
+        }
+    }
     var body: some View {
         ScrollView {
             HStack {
@@ -22,7 +56,7 @@ struct ContentView: View {
                         .underline()
                     
                     // user input
-                    Text(shortForm)
+                    Text(providedShortForm)
                         .bold()
                         .padding(10)
                     
