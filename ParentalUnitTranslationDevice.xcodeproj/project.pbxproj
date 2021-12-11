@@ -11,6 +11,7 @@
 		62173B5A2764F488009CAC55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62173B592764F488009CAC55 /* ContentView.swift */; };
 		62173B5C2764F489009CAC55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62173B5B2764F489009CAC55 /* Assets.xcassets */; };
 		62173B5F2764F489009CAC55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62173B5E2764F489009CAC55 /* Preview Assets.xcassets */; };
+		629A1260276520B1004015F9 /* TranslatorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A125F276520B1004015F9 /* TranslatorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		62173B592764F488009CAC55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		62173B5B2764F489009CAC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62173B5E2764F489009CAC55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		629A125F276520B1004015F9 /* TranslatorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				62173B592764F488009CAC55 /* ContentView.swift */,
+				629A125F276520B1004015F9 /* TranslatorPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629A1260276520B1004015F9 /* TranslatorPickerView.swift in Sources */,
 				62173B5A2764F488009CAC55 /* ContentView.swift in Sources */,
 				62173B582764F488009CAC55 /* ParentalUnitTranslationDeviceApp.swift in Sources */,
 			);
