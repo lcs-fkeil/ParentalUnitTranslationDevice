@@ -39,7 +39,7 @@ struct ContentView: View {
             return "because"
         case "TY":
             return "thank you"
-        case "TW":
+        case "YW":
             return "you're welcome"
         case "TTYL":
             return "talk to you later"
