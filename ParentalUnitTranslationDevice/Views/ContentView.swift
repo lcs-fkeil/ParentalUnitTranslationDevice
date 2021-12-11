@@ -7,15 +7,16 @@
 
 import SwiftUI
 
+struct ContentView: View {
+
 // MARK: Stored properties
-var providedShortForm: String = ""
+@State var providedShortForm: String = ""
 
 
 // MARK: Computed properties
 
-struct ContentView: View {
-    
-    var feedback: String {
+
+    var translation: String {
         switch providedShortForm {
             
         case "CU":
@@ -56,14 +57,22 @@ struct ContentView: View {
                         .underline()
                     
                     // user input
-                    Text(providedShortForm)
-                        .bold()
-                        .padding(10)
+                    TextField("short form",
+                              text: $providedShortForm,
+                              prompt: Text("Enter short form . . ."))
                     
                     
                     Text("Translation:")
                         .font(.title)
                         .underline()
+                    
+                    // Output: translation
+                    Text(translation)
+                        .bold()
+                        .padding(.vertical, 10)
+                        
+                        
+                        
                     
                 }
                 Spacer()
