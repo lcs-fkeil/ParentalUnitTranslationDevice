@@ -11,7 +11,10 @@ import SwiftUI
 struct ParentalUnitTranslationDeviceApp: App {
     var body: some Scene {
         WindowGroup {
-            LandingPageView()
+            NavigationView{
+                LandingPageView()
+                
+            }
         }
     }
 }
